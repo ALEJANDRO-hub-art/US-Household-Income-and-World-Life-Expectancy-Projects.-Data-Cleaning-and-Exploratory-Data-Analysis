@@ -227,4 +227,136 @@ Provides:
 - Statistical income measures
 - Demographic spatial information
 
+📌 Overview of Findings
 
+The analysis of the U.S. Household Income dataset reveals:
+
+✅ large geographic differences in land and water distribution across states
+✅ major variation in average household income between states and city types
+✅ clear economic inequality, with certain regions consistently ranking lower
+✅ specific location types showing significantly higher income levels
+✅ discrepancies and missing values in the statistics table (e.g., California)
+
+By joining the income and income statistics tables, the analysis provides a deeper understanding of income patterns across the United States at both state and city levels.
+
+🔍 **#Key Analysis Insights**
+
+🌎 **Geographic Insights**
+
+Queries summing land and water area by state show:
+- Alaska overwhelmingly leads in both total land and water area
+- Texas also ranks highly in land size
+- Michigan ranks among the highest in water area
+
+This geographic context helps explain:
+- Population distribution
+- Economic activity and resource availability
+- regional development differences
+
+💰 **Income Data Quality Issues**
+
+When joining the income and statistics tables, the analysis discovers:
+
+many records for California contain zeros in Mean, Median, and other statistical fields
+
+the RIGHT JOIN reveals rows in the statistics table that do not match the main dataset
+
+This indicates:
+
+❌ incomplete or inconsistent data reporting
+❌ missing income values
+✅ need for filtering before analysis
+
+Filtering out Mean = 0 improves accuracy in later calculations.
+
+🏛️ State Income Rankings
+
+After removing invalid records, the average income analysis shows:
+
+🔹 Lowest Average Income States:
+
+Puerto Rico
+
+Mississippi
+
+Arkansas
+
+West Virginia
+
+Alabama
+
+These regions exhibit:
+
+✅ lower economic performance
+✅ weaker household earning power
+✅ potential need for economic support policies
+
+🔹 Highest Average Income States:
+
+District of Columbia
+
+Connecticut
+
+New Jersey
+
+Maryland
+
+Massachusetts
+
+These areas show:
+
+✅ strong economies
+✅ higher wage levels
+✅ concentration of professional and government employment
+
+🏘️ Income by City Type
+
+When grouping by "Type" (e.g., City classification):
+
+"Municipality" shows the highest average income but very low count (only 1 record)
+
+"CPD" shows the highest median values among more common types
+
+Applying HAVING COUNT(Type) > 100 filters out unreliable category results and reveals:
+
+✅ more representative income patterns
+✅ better analytical validity
+
+🏙️ City-Level Insights
+
+City-level aggregation highlights:
+
+Delta Junction, Alaska has the highest average mean income among cities analyzed
+
+Significant variation exists even within the same state
+
+This suggests:
+
+✅ localized economic concentration
+✅ income hotspots not visible in state-level data
+
+📈 Overall Interpretation
+
+The analysis demonstrates:
+
+The U.S. household income landscape is highly uneven, with strong economic performance in Northeastern states and major disparities in Southern and territory regions.
+
+The combined dataset reveals:
+
+regional inequality
+
+inconsistent reporting in certain states
+
+income clustering in specific city types and locations
+
+✅ Key Takeaways
+
+Geographic and economic factors strongly influence household income
+
+Data cleaning is essential due to missing or zero values
+
+High-income regions include D.C. and the Northeast
+
+Low-income regions include Southern states and Puerto Rico
+
+City-level analysis exposes income hotspots not visible at the state level
