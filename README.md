@@ -70,7 +70,7 @@ The SQL analysis reveals:
 - Strong socio-economic and health correlations exist globally
 
 **Life Expectancy Change Over Time**
-MAX(Life_expectancy) - MIN(Life_expectancy)
+- MAX(Life_expectancy) - MIN(Life_expectancy)
 
 Insight:
 - Many countries show noticeable increases in life expectancy
@@ -83,14 +83,14 @@ Sorting ASC reveals:
 - Countries with minimal improvement suggests stagnation or already high baseline life expectancy
 
 **Global Trend Over Time**
-SELECT Year, AVG(Life_expectancy)
+- SELECT Year, AVG(Life_expectancy)
 
 Insight:
 - Global life expectancy steadily increases year after year
 - Indicates worldwide improvement in health outcomes
 
 **GDP vs Life Expectancy**
-SELECT Country, ROUND(AVG(Life_expectancy)), ROUND(AVG(GDP))
+- SELECT Country, ROUND(AVG(Life_expectancy)), ROUND(AVG(GDP))
 
 Insight:
 - Many countries with low GDP also show low life expectancy
@@ -114,7 +114,7 @@ Average life expectancy for:
 This confirms: Economic development strongly impacts population longevity
 
 **Developed vs Developing Status**
-SELECT Status, AVG(Life_expectancy)
+- SELECT Status, AVG(Life_expectancy)
 
 Insight:
 - Developed countries: ~79.2 years
@@ -123,7 +123,7 @@ Insight:
 This means: People in developed countries live over a decade longer on average
 
 **Status Count**
-COUNT(DISTINCT Country)
+- COUNT(DISTINCT Country)
 
 Insight:
 - ~32 developed countries
@@ -132,7 +132,7 @@ Insight:
 This explains: Why global averages are pulled downward. Most of the world is still classified as developing
 
 **BMI vs Life Expectancy**
-AVG(BMI)
+- AVG(BMI)
 
 Insight:
 - Countries with extremely high BMI levels may have increased health risks
@@ -140,7 +140,7 @@ Insight:
 - Some high-BMI countries show reduced life expectancy
 
 **Adult Mortality Trend Analysis (Window Function)**
-SUM(Adult_Mortality) OVER (PARTITION BY Country ORDER BY Year)
+- SUM(Adult_Mortality) OVER (PARTITION BY Country ORDER BY Year)
 
 Insights:
 - Running totals reveal long-term mortality burden
