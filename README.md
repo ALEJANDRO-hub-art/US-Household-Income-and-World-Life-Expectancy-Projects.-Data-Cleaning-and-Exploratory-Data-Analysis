@@ -227,7 +227,7 @@ Provides:
 - Statistical income measures
 - Demographic spatial information
 
-📌 Overview of Findings
+📌 **Overview of Findings**
 
 The analysis of the U.S. Household Income dataset reveals:
 
@@ -241,7 +241,7 @@ By joining the income and income statistics tables, the analysis provides a deep
 
 🔍 #**Key Analysis Insights**
 
-🌎 **Geographic Insights**
+🌎 **1. Geographic Insights**
 
 Queries summing land and water area by state show:
 - Alaska overwhelmingly leads in both total land and water area
