@@ -159,7 +159,7 @@ The SQL analysis reveals:
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-📊 **US Household Income Data Cleaning and Exploratory Data Analysis Project**
+# 📊 **US Household Income Data Cleaning and Exploratory Data Analysis Project**
 
 📌 **Project Overview**
 
