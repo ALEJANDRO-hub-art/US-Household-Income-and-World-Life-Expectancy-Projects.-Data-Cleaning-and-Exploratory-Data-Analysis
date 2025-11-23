@@ -231,11 +231,11 @@ Provides:
 
 The analysis of the U.S. Household Income dataset reveals:
 
-  ✅ large geographic differences in land and water distribution across states
-  ✅ major variation in average household income between states and city types
-  ✅ clear economic inequality, with certain regions consistently ranking lower
-  ✅ specific location types showing significantly higher income levels
-  ✅ discrepancies and missing values in the statistics table (e.g., California)
+- Large geographic differences in land and water distribution across states
+- Major variation in average household income between states and city types
+- Clear economic inequality, with certain regions consistently ranking lower
+- Specific location types showing significantly higher income levels
+- Discrepancies and missing values in the statistics table (e.g., California)
 
 By joining the income and income statistics tables, the analysis provides a deeper understanding of income patterns across the United States at both state and city levels.
 
