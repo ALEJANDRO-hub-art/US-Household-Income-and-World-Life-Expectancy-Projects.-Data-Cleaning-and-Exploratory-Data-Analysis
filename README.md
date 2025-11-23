@@ -1,4 +1,4 @@
-📊 # **World Life Expectancy Data Cleaning and Exploratory Data Analysis Project**
+# 📊 **World Life Expectancy Data Cleaning and Exploratory Data Analysis Project**
 
 📌 **Project Overview**
 
