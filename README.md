@@ -253,61 +253,48 @@ This geographic context helps explain:
 - Economic activity and resource availability
 - regional development differences
 
-💰 **Income Data Quality Issues**
+💰 **2. Income Data Quality Issues**
 
 When joining the income and statistics tables, the analysis discovers:
-
-many records for California contain zeros in Mean, Median, and other statistical fields
-
-the RIGHT JOIN reveals rows in the statistics table that do not match the main dataset
+- Many records for California contain zeros in Mean, Median, and other statistical fields
+- the RIGHT JOIN reveals rows in the statistics table that do not match the main dataset
 
 This indicates:
-
-❌ incomplete or inconsistent data reporting
-❌ missing income values
-✅ need for filtering before analysis
+- Incomplete or inconsistent data reporting
+- Missing income values
+- Need for filtering before analysis
 
 Filtering out Mean = 0 improves accuracy in later calculations.
 
-🏛️ State Income Rankings
+🏛️ **3. State Income Rankings**
 
 After removing invalid records, the average income analysis shows:
 
-🔹 Lowest Average Income States:
+🔹 **Lowest Average Income States (beginning with the Lowest):**
 
-Puerto Rico
-
-Mississippi
-
-Arkansas
-
-West Virginia
-
-Alabama
+- Puerto Rico
+- Mississippi
+- Arkansas
+- West Virginia
+- Alabama
 
 These regions exhibit:
+- Lower economic performance
+- Weaker household earning power
+- Potential need for economic support policies
 
-✅ lower economic performance
-✅ weaker household earning power
-✅ potential need for economic support policies
+🔹 **Highest Average Income States (beginning with the Highest):**
 
-🔹 Highest Average Income States:
-
-District of Columbia
-
-Connecticut
-
-New Jersey
-
-Maryland
-
-Massachusetts
+- District of Columbia
+- Connecticut
+- New Jersey
+- Maryland
+- Massachusetts
 
 These areas show:
-
-✅ strong economies
-✅ higher wage levels
-✅ concentration of professional and government employment
+- Strong economies
+- Higher wage levels
+- Concentration of professional and government employment
 
 🏘️ Income by City Type
 
