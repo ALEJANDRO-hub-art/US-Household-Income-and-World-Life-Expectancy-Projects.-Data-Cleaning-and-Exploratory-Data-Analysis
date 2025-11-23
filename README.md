@@ -209,7 +209,8 @@ The insights produced can help:
 - Researchers analyze inequality trends
 - Housing and retail industries identify opportunities
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
+
 ✅ MySQL / SQL
 
 Used for:
