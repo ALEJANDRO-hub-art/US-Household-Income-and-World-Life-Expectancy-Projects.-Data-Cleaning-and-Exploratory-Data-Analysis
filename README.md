@@ -157,22 +157,71 @@ The SQL analysis reveals:
 - Strong evidence that economic development, healthcare access, and living conditions drive global differences in life expectancy, with developing nations facing significantly lower longevity and higher mortality challenges.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --------------------------------------------------------------------------------------------------------------------------------
 
 📊 **US Household Income Data Cleaning and Exploratory Data Analysis Project**
+
+📌 **Project Overview**
+
+This project focuses on analyzing U.S. household income patterns using a dataset that combines geographic, demographic, and economic information across states, counties, cities, and ZIP code areas in the United States.
+
+The dataset includes:
+- Household income values
+- Income percentiles and statistical measures
+- Geographic identifiers (state, county, city, ZIP code)
+- Land and water area
+- Population-related metrics
+
+The main goal of the project is to:
+- Clean and prepare the raw income data
+- Merge income values with income statistics
+- Identify income distribution patterns across regions
+- Explore socioeconomic differences between locations
+- Generate insights useful for policy, business, and social analysis
+
+By integrating both datasets, the project enables a deeper understanding of how income varies geographically and what factors may contribute to economic disparities across the U.S.
+
+🧩 **Business Problem**
+
+Government agencies, businesses, and organizations face challenges such as:
+- Unequal income distribution across regions
+- Limited understanding of community-level economic conditions
+- Difficulty identifying high-income vs low-income markets
+- Inconsistent or messy data preventing accurate analysis
+
+These challenges affect:
+- Policy planning
+- Business expansion decisions
+- Resource allocation
+- Housing market analysis
+- Retail and service location strategy
+- Social programs targeting low-income areas
+
+This project addresses the problem by:
+- Cleaning and standardizing income records
+- Joining income data with statistical measures
+- Identifying high-income and low-income regions
+- Uncovering patterns in income distribution across the U.S.
+
+The insights produced can help:
+- Businesses determine where to expand
+- Governments target economic support programs
+- Researchers analyze inequality trends
+- Housing and retail industries identify opportunities
+
+🛠️ Tech Stack
+✅ MySQL / SQL
+
+Used for:
+- Loading cleaned datasets
+- Joining income and income statistics tables
+- Detecting NULLs, blanks, and duplicates
+- Analyzing income distribution by region
+- Aggregation and grouping
+
+✅ CSV Data Source
+
+Provides:
+- Household income by U.S. geography
+- Statistical income measures
+- Demographic spatial information
