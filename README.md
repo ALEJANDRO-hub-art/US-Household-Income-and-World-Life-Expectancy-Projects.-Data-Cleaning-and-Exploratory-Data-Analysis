@@ -58,19 +58,103 @@ calculating:
 - GDP-based life expectancy patterns
 
 
+📈🧮 **Overview of Findings**
 
+The SQL analysis reveals:
 
+- Life expectancy varies significantly across countries
+- Countries with higher GDP consistently show higher life expectancy
+- Developed nations live ~12–13 years longer than developing nations
+- BMI extremes may indicate health risks
+- Adult mortality trends show long-term health improvements in some nations
+- Strong socio-economic and health correlations exist globally
 
+**Life Expectancy Change Over Time**
+MAX(Life_expectancy) - MIN(Life_expectancy)
 
+Insight:
+- Many countries show noticeable increases in life expectancy
+- Some nations improved 10–20+ years within the dataset range. This indicates major progress in healthcare, sanitation, and living standards
 
+Sorting DESC reveals:
+- Countries with the largest improvements often developing nations undergoing rapid health modernization
 
+Sorting ASC reveals:
+- Countries with minimal improvement suggests stagnation or already high baseline life expectancy
 
+**Global Trend Over Time**
+SELECT Year, AVG(Life_expectancy)
 
+Insight:
+- Global life expectancy steadily increases year after year
+- Indicates worldwide improvement in health outcomes
 
+**GDP vs Life Expectancy**
+SELECT Country, ROUND(AVG(Life_expectancy)), ROUND(AVG(GDP))
 
+Insight:
+- Many countries with low GDP also show low life expectancy
+- Wealthier nations show the highest life expectancy averages
+- This reveals a strong economic-health relationship
 
+**GDP Threshold Analysis**
 
+CASE WHEN GDP >= 1500
+Insights:
+- The dataset contains: 1326 Countries with high-GDP with a High_GDP_Life_Expectancy of 74.20
 
+CASE WHEN GDP <=1500
+Insights:
+- The dataset contains: 1612 countries with low-GDP records with a Low_GDP_Life_Expectancy of 64.70
+
+Average life expectancy for:
+- High GDP countries = significantly higher
+- Low GDP countries = much lower
+
+This confirms: Economic development strongly impacts population longevity
+
+**Developed vs Developing Status**
+SELECT Status, AVG(Life_expectancy)
+
+Insight:
+- Developed countries: ~79.2 years
+- Developing countries: ~66.8 years
+
+This means: People in developed countries live over a decade longer on average
+
+**Status Count**
+COUNT(DISTINCT Country)
+
+Insight:
+- ~32 developed countries
+- ~162 developing countries
+
+This explains: Why global averages are pulled downward. Most of the world is still classified as developing
+
+**BMI vs Life Expectancy**
+AVG(BMI)
+
+Insight:
+- Countries with extremely high BMI levels may have increased health risks
+- Higher BMI does not always correlate positively with longer life
+- Some high-BMI countries show reduced life expectancy
+
+**Adult Mortality Trend Analysis (Window Function)**
+SUM(Adult_Mortality) OVER (PARTITION BY Country ORDER BY Year)
+
+Insights:
+- Running totals reveal long-term mortality burden
+
+Afghanistan example shows:
+- Yearly mortality improving but cumulative mortality remains high. This indicates long-term health challenges
+
+United Arab Emirates example:
+- Low adult mortality year-to-year means increasing life expectancy. This reflects strong healthcare systems and living standards
+
+📝**Conclusion**
+
+The SQL analysis reveals:
+- Strong evidence that economic development, healthcare access, and living conditions drive global differences in life expectancy, with developing nations facing significantly lower longevity and higher mortality challenges.
 
 
 
