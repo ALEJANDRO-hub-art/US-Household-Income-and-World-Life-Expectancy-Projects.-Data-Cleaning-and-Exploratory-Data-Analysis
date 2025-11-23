@@ -296,54 +296,40 @@ These areas show:
 - Higher wage levels
 - Concentration of professional and government employment
 
-🏘️ Income by City Type
+🏘️ **4. Income by City Type**
 
 When grouping by "Type" (e.g., City classification):
-
-"Municipality" shows the highest average income but very low count (only 1 record)
-
-"CPD" shows the highest median values among more common types
+- "Municipality" shows the highest average income but very low count (only 1 record)
+- "CPD" shows the highest median values among more common types
 
 Applying HAVING COUNT(Type) > 100 filters out unreliable category results and reveals:
+- more representative income patterns
+- better analytical validity
 
-✅ more representative income patterns
-✅ better analytical validity
-
-🏙️ City-Level Insights
+🏙️ **City-Level Insights**
 
 City-level aggregation highlights:
-
-Delta Junction, Alaska has the highest average mean income among cities analyzed
-
-Significant variation exists even within the same state
+- Delta Junction, Alaska has the highest average mean income among cities analyzed
+- Significant variation exists even within the same state
 
 This suggests:
+- Localized economic concentration
+- Income hotspots not visible in state-level data
 
-✅ localized economic concentration
-✅ income hotspots not visible in state-level data
-
-📈 Overall Interpretation
+📈 **Overall Interpretation**
 
 The analysis demonstrates:
-
 The U.S. household income landscape is highly uneven, with strong economic performance in Northeastern states and major disparities in Southern and territory regions.
 
 The combined dataset reveals:
+- Regional inequality
+- Inconsistent reporting in certain states
+- Income clustering in specific city types and locations
 
-regional inequality
+✅ **Key Takeaways**
 
-inconsistent reporting in certain states
-
-income clustering in specific city types and locations
-
-✅ Key Takeaways
-
-Geographic and economic factors strongly influence household income
-
-Data cleaning is essential due to missing or zero values
-
-High-income regions include D.C. and the Northeast
-
-Low-income regions include Southern states and Puerto Rico
-
-City-level analysis exposes income hotspots not visible at the state level
+- Geographic and economic factors strongly influence household income
+- Data cleaning is essential due to missing or zero values
+- High-income regions include D.C. and the Northeast
+- Low-income regions include Southern states and Puerto Rico
+- City-level analysis exposes income hotspots not visible at the state level
