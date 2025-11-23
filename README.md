@@ -239,7 +239,7 @@ The analysis of the U.S. Household Income dataset reveals:
 
 By joining the income and income statistics tables, the analysis provides a deeper understanding of income patterns across the United States at both state and city levels.
 
-🔍 **#Key Analysis Insights**
+🔍 #**Key Analysis Insights**
 
 🌎 **Geographic Insights**
 
